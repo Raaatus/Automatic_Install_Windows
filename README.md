@@ -45,7 +45,11 @@ Insert the images of Windows 10 and the downloaded or burned image into the mach
 You end up with, for example 
 D:\Windows (D: is the drive for the Windows 10 iso) and E:\start.bat (E: is the drive for our script iso)
 
+On the Windows installation page, press Shift+F10.
 
+This will open the administrator cmd of the fictitious Windows10 iso partition.
+
+You'll find the drive containing the installation scripts
 
 
 ### Credits:
