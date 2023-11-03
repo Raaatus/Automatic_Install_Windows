@@ -40,6 +40,21 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 
 (/optionnal)
 
+Look at how many versions (Pro, Family, Enterprise) are available in the chosen iso.
+
+We'll mount the iso on the main machine (not the installation machine) and launch a terminal, using the following command: 
+
+```
+dism /get-wiminfo /wimfile:[Location to install.wim]
+
+dism /get-wiminfo /wimfile:D:\sources\install.wim
+```
+Note the index of the version you want.
+
+In this case, I want the professional version, so I'll use index 6.
+
+
+
 Insert the images of Windows 10 and the downloaded or burned image into the machine to be installed.
 
 You end up with, for example 
@@ -51,6 +66,15 @@ This will open the administrator cmd of the fictitious Windows10 iso partition.
 
 You'll find the drive containing the installation scripts
 ![plot](./img/1.png)
+
+We'll run the command to convert the disk and install Windows 10 directly.
+The custom folder contains a basic "DefaultMbr_Low" file.
+It will convert Disk 0 to MBR and assign it the letter C and the label "Windows".
+
+(optionnal)
+If you created the diskpart file yourself, replace "DefaultMbr_Low" with the name of your file in ./custom.
+(/optionnal)
+
 
 ### Credits:
 The repo that inspired all this, many thanks.
