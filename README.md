@@ -25,12 +25,26 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 
 **For a quick configuration without custom disk formats or partitions, please ignore the commands between (optionnal)(/optionnal)**
 
-(optionnal)
-### Configure Diskpart
 
+
+
+### Configure Diskpart
+(optionnal)
 
 
 (/optionnal)
+
+### Create a iso file
+(optionnal)
+
+
+(/optionnal)
+
+Insert the images of Windows 10 and the downloaded or burned image into the machine to be installed.
+
+You end up with, for example 
+D:\Windows (D: is the drive for the Windows 10 iso) and E:\start.bat (E: is the drive for our script iso)
+
 
 
 
