@@ -85,11 +85,40 @@ start.bat <Custom Diskpart> <Path Install.wim> <Index> <ApplyLetterPart> <Format
 
 E:
 start.bat "DiskpartMbr_Low" "d:\sources\install.wim" "6" "C" "MBR" "True"
-
 ```
 ![plot](./img/2.png)
 
+This may take a while depending on your configuration (2 minutes with 8 GB ram for me).
 
+**At the end of the script, if you want to bypass the OOBE used to configure network connections, user accounts and matteriel configuration during the first installation, you'll only have to configure the services manually.**
+```
+Bypass_OOBE_P1.bat <ApplyLetterPart>
+
+Bypass_OOBE_P1.bat "C"
+```
+![plot](./img/3.png)
+
+Finally, reboot the machine with the wpeutil utility.
+
+**The installation is now complete, and you can configure the end of Windows as usual.**
+
+*If you've chosen the OOBE bypass, you're not done yet.*
+- Once the machine has rebooted, initialization will lock up and open a shell, so we'll end the configuration with the following command: 
+```
+[Letter of iso script]:
+Bypass_OOBE_P2.bat <ApplyLetterPart> <Recovery Part> <AdminName> <AdminPass> <GroupAdmin> <GroupUser>
+
+E:
+Bypass_OOBE_P1.bat "C" "False" "user" "user" "Administrators" "Users"
+```
+![plot](./img/4.png)
+**It is unfortunately necessary to specify the admin and user groups, because depending on the language chosen, the group labels can be very different.**
+
+**The script will end with a black screen and the machine will restart, you will be asked for the password, and the last service configuration can be performed. **
+
+![plot](./img/5.png)
+![plot](./img/7.png)
+![plot](./img/8.png)
 
 ### Credits:
 The repo that inspired all this, many thanks.
