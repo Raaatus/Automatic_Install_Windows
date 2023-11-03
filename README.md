@@ -112,6 +112,7 @@ E:
 Bypass_OOBE_P1.bat "C" "False" "user" "user" "Administrators" "Users"
 ```
 ![plot](./img/4.png)
+
 **It is unfortunately necessary to specify the admin and user groups, because depending on the language chosen, the group labels can be very different.**
 
 **The script will end with a black screen and the machine will restart, you will be asked for the password, and the last service configuration can be performed. **
