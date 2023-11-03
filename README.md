@@ -28,20 +28,20 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 
 
 
-### Configure Diskpart
+### *Configure Diskpart*
 (optionnal)
 
 
 (/optionnal)
 
-### Create a iso file
+### *Create a iso file*
 (optionnal)
 
 
 (/optionnal)
 
 
-### Prepare
+### *Prepare*
 Look at how many versions (Pro, Family, Enterprise) are available in the chosen iso.
 
 - We'll mount the iso on the main machine (not the installation machine) and launch a terminal, using the following command: 
@@ -51,16 +51,18 @@ dism /get-wiminfo /wimfile:[Location to install.wim]
 
 dism /get-wiminfo /wimfile:D:\sources\install.wim
 ```
+![plot](./img/index.png)
+
 Note the index of the version you want.
 
 In this case, I want the professional version, so I'll use index 6.
 
 
-### Start
+### *Start*
 - Insert the images of Windows 10 and the downloaded or burned image into the machine to be installed.
 
 You end up with, for example 
-D:\Windows (D: is the drive for the Windows 10 iso) and E:\start.bat (E: is the drive for our script iso)
+*D:\Windows (D: is the drive for the Windows 10 iso) and E:\start.bat (E: is the drive for our script iso)*
 
 - On the Windows installation page, press Shift+F10.
 
@@ -76,6 +78,17 @@ It will convert Disk 0 to MBR and assign it the letter C and the label "Windows"
 (optionnal)
 If you created the diskpart file yourself, replace "DefaultMbr_Low" with the name of your file in ./custom.
 (/optionnal)
+
+```
+[Letter of iso script]:
+start.bat <Custom Diskpart> <Path Install.wim> <Index> <ApplyLetterPart> <Format> <Bypass_OOBE>
+
+E:
+start.bat "DiskpartMbr_Low" "d:\sources\install.wim" "6" "C" "MBR" "True"
+
+```
+![plot](./img/2.png)
+
 
 
 ### Credits:
