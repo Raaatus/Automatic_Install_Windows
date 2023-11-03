@@ -40,6 +40,8 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 
 (/optionnal)
 
+
+### Prepare
 Look at how many versions (Pro, Family, Enterprise) are available in the chosen iso.
 
 - We'll mount the iso on the main machine (not the installation machine) and launch a terminal, using the following command: 
@@ -54,7 +56,7 @@ Note the index of the version you want.
 In this case, I want the professional version, so I'll use index 6.
 
 
-
+### Start
 - Insert the images of Windows 10 and the downloaded or burned image into the machine to be installed.
 
 You end up with, for example 
