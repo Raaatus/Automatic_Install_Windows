@@ -50,7 +50,7 @@ On the Windows installation page, press Shift+F10.
 This will open the administrator cmd of the fictitious Windows10 iso partition.
 
 You'll find the drive containing the installation scripts
-
+![plot](./img/1.png)
 
 ### Credits:
 The repo that inspired all this, many thanks.
