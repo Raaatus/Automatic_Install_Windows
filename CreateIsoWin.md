@@ -10,7 +10,7 @@ With the graphical interface, it's pretty straightforward.
 
 - We're going to download the scripts in this folder and burn them as iso files.
 
-Check the "Essential_Files.zip" [releases](https://www.imgburn.com/index.php?act=download) to avoid downloading the entire repo.
+Check the "Essential_Files.zip" [releases](https://github.com/Raaatus/Automatic_Install_Windows/releases/) to avoid downloading the entire repo.
 
 - Once ImgBurn has been installed on your machine, you can run it and select `Create Image file From files / folders`
 - Select the entire folder as the source of the files to be burned.
