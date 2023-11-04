@@ -30,12 +30,13 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 
 
 ### *Configure Diskpart*
-(optionnal)
-We won't go into detail about the different partitions, but for a configuration for people with global experience, I clearly haven't tested all the possible scenarios, of all the diskpart commands, you can test for yourself.
+*(optionnal)*
 
+*We won't go into detail about the different partitions, but for a configuration for people with global experience, I clearly haven't tested all the possible scenarios, of all the diskpart commands, you can test for yourself.*
 
+A brief explanation, Click [here](./DiskpartConfig.md).
 
-(/optionnal)
+*(/optionnal)*
 
 ### *Create a iso file*
 (optionnal)
@@ -80,9 +81,11 @@ This will open the administrator cmd of the fictitious Windows10 iso partition.
 The custom folder contains a basic `DefaultMbr_Low` file.
 It will convert Disk `0` to `MBR` and assign it the `letter C` and the label `"Windows"`.
 
-*(optionnal)
-If you created the diskpart file yourself, replace `DefaultMbr_Low` with the name of your file in `./custom`.
-(/optionnal)*
+*(optionnal)*
+
+*If you created the diskpart file yourself, replace `DefaultMbr_Low` with the name of your file in `./custom`.*
+
+*(/optionnal)*
 
 **Don't forget to use the same drive letter as the one in the diskpart configuration file.**
 ```
