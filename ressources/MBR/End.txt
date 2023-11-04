@@ -1,0 +1,14 @@
+create part primary
+format quick label Windows
+assign letter C
+active
+
+
+
+select disk 0
+clean
+convert mbr
+create part primary
+format quick label Windows
+assign letter C
+active

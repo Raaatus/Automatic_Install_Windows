@@ -1,0 +1,11 @@
+list disk
+select disk 0
+clean 
+convert gpt
+create part efi size 512
+format fs fat32 quick
+assign letter w
+create part msr size 16
+create part primary 
+format quick label Windows
+assign letter C 
