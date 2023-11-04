@@ -6,6 +6,7 @@ Scripts that can be compiled into an iso, to be launched on the Windows installa
 
 ### Quick explanation: 
 
+I currently use it as a complement to vagrant for deploying Windows servers and clients (it's cool not to have to pay for licenses).
 
 These are scripts in `.bat` format
 You'll be able to install Windows with virtually complete automation.
