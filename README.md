@@ -108,6 +108,8 @@ Finally, reboot the machine with the wpeutil utility.
 
 - *If you've chosen the OOBE bypass, you're not done yet.*
 Once the machine has rebooted, initialization will lock up and open a shell, so we'll end the configuration with the following command: 
+
+*(optionnal)If you have a recovery partition, don't forget to set the parameter to "True".(/optionnal)*
 ```
 [Letter of iso script]:
 Bypass_OOBE_P2.bat <ApplyLetterPart> <Recovery Part> <AdminName> <AdminPass> <GroupAdmin> <GroupUser>
