@@ -39,10 +39,12 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 *(/optionnal)*
 
 ### *Create a iso file*
-(optionnal)
 
+*(optionnal)*
 
-(/optionnal)
+*Here's a quick tutorial on Windows with ImgBurn software. [Here](./CreateIsoWin.md).*
+
+*(/optionnal)*
 
 
 ### *Prepare*
