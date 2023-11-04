@@ -23,7 +23,7 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 
 ## Get Started
 
-**For a quick configuration without custom disk formats or partitions, please ignore the commands between (optionnal)(/optionnal)**
+**For a quick configuration without custom disk formats or partitions, please ignore the commands between *(optionnal)(/optionnal)***
 
 
 
@@ -62,7 +62,7 @@ In this case, I want the professional version, so I'll use index 6.
 - Insert the images of Windows 10 and the downloaded or burned image into the machine to be installed.
 
 You end up with, for example 
-*D:\Windows (D: is the drive for the Windows 10 iso) and E:\start.bat (E: is the drive for our script iso)*
+*`D:\Windows` (D: is the drive for the Windows 10 iso) and `E:\start.bat` (E: is the drive for our script iso)*
 
 - On the Windows installation page, press Shift+F10.
 
@@ -72,12 +72,12 @@ You'll find the drive containing the installation scripts
 ![plot](./img/1.png)
 
 We'll run the command to convert the disk and install Windows 10 directly.
-The custom folder contains a basic "DefaultMbr_Low" file.
-It will convert Disk 0 to MBR and assign it the letter C and the label "Windows".
+The custom folder contains a basic `DefaultMbr_Low` file.
+It will convert Disk `0` to `MBR` and assign it the `letter C` and the label `"Windows"`.
 
-(optionnal)
-If you created the diskpart file yourself, replace "DefaultMbr_Low" with the name of your file in ./custom.
-(/optionnal)
+*(optionnal)
+If you created the diskpart file yourself, replace `DefaultMbr_Low` with the name of your file in `./custom`.
+(/optionnal)*
 
 ```
 [Letter of iso script]:
