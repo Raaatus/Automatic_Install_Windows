@@ -34,7 +34,7 @@ We'll clean and convert the disk to mbr or gpt, then install the windows image w
 
 *We won't go into detail about the different partitions, but for a configuration for people with global experience, I clearly haven't tested all the possible scenarios, of all the diskpart commands, you can test for yourself.*
 
-A brief explanation, Click [here](./DiskpartConfig.md).
+*A brief explanation, Click [here](./DiskpartConfig.md).*
 
 *(/optionnal)*
 
