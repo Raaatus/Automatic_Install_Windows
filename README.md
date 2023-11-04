@@ -62,16 +62,18 @@ In this case, I want the professional version, so I'll use index 6.
 - Insert the images of Windows 10 and the downloaded or burned image into the machine to be installed.
 
 You end up with, for example 
+
 *`D:\Windows` (D: is the drive for the Windows 10 iso) and `E:\start.bat` (E: is the drive for our script iso)*
 
 - On the Windows installation page, press Shift+F10.
 
 This will open the administrator cmd of the fictitious Windows10 iso partition.
 
-You'll find the drive containing the installation scripts
+- You'll find the drive containing the installation scripts
 ![plot](./img/1.png)
 
-We'll run the command to convert the disk and install Windows 10 directly.
+- We'll run the command to convert the disk and install Windows 10 directly.
+  
 The custom folder contains a basic `DefaultMbr_Low` file.
 It will convert Disk `0` to `MBR` and assign it the `letter C` and the label `"Windows"`.
 
@@ -91,7 +93,7 @@ start.bat "DiskpartMbr_Low" "d:\sources\install.wim" "6" "C" "MBR" "True"
 
 This may take a while depending on your configuration (2 minutes with 8 GB ram for me).
 
-**At the end of the script, if you want to bypass the OOBE used to configure network connections, user accounts and matteriel configuration during the first installation, you'll only have to configure the services manually.**
+- **At the end of the script, if you want to bypass the OOBE used to configure network connections, user accounts and matteriel configuration during the first installation, you'll only have to configure the services manually.**
 ```
 Bypass_OOBE_P1.bat <ApplyLetterPart>
 
@@ -104,8 +106,8 @@ Finally, reboot the machine with the wpeutil utility.
 
 **The installation is now complete, and you can configure the end of Windows as usual.**
 
-*If you've chosen the OOBE bypass, you're not done yet.*
-- Once the machine has rebooted, initialization will lock up and open a shell, so we'll end the configuration with the following command: 
+- *If you've chosen the OOBE bypass, you're not done yet.*
+Once the machine has rebooted, initialization will lock up and open a shell, so we'll end the configuration with the following command: 
 ```
 [Letter of iso script]:
 Bypass_OOBE_P2.bat <ApplyLetterPart> <Recovery Part> <AdminName> <AdminPass> <GroupAdmin> <GroupUser>
@@ -115,7 +117,7 @@ Bypass_OOBE_P1.bat "C" "False" "user" "user" "Administrators" "Users"
 ```
 ![plot](./img/4.png)
 
-**It is unfortunately necessary to specify the admin and user groups, because depending on the language chosen, the group labels can be very different.**
+- **It is unfortunately necessary to specify the admin and user groups, because depending on the language chosen, the group labels can be very different.**
 
 **The script will end with a black screen and the machine will restart, you will be asked for the password, and the last service configuration can be performed. **
 
