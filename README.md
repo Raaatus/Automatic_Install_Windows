@@ -79,6 +79,7 @@ It will convert Disk `0` to `MBR` and assign it the `letter C` and the label `"W
 If you created the diskpart file yourself, replace `DefaultMbr_Low` with the name of your file in `./custom`.
 (/optionnal)*
 
+**Don't forget to use the same drive letter as the one in the diskpart configuration file.**
 ```
 [Letter of iso script]:
 start.bat <Custom Diskpart> <Path Install.wim> <Index> <ApplyLetterPart> <Format> <Bypass_OOBE>
@@ -96,6 +97,7 @@ Bypass_OOBE_P1.bat <ApplyLetterPart>
 
 Bypass_OOBE_P1.bat "C"
 ```
+
 ![plot](./img/3.png)
 
 Finally, reboot the machine with the wpeutil utility.
