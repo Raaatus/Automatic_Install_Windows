@@ -125,7 +125,7 @@ If you have a recovery partition, don't forget to set the parameter <Recovery Pa
 Bypass_OOBE_P2.bat <ApplyLetterPart> <Recovery Part> <AdminName> <AdminPass> <GroupAdmin> <GroupUser>
 
 E:
-Bypass_OOBE_P1.bat "C" "False" "user" "user" "Administrators" "Users"
+Bypass_OOBE_P2.bat "C" "False" "user" "user" "Administrators" "Users"
 ```
 ![plot](./img/4.png)
 
